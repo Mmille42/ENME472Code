@@ -191,20 +191,20 @@ plt.grid(True)
 plt.savefig(timestr+'gyro.jpg')
 
 
-fullDirectory='/home/mmill/'+timestr+'xaccel.jpg'
-command1='/home/mmill/Dropbox-Uploader/dropbox_uploader.sh upload '+ fullDirectory + ' /'
+fullDirectory='/home/raspi/'+timestr+'xaccel.jpg'
+command1='/home/raspi/Dropbox-Uploader/dropbox_uploader.sh upload '+ fullDirectory + ' /'
 os.system(command1)
-command2='/home/mmill/Dropbox-Uploader/dropbox_uploader.sh upload '+timestr+ 'yaccel.jpg /'
+command2='/home/raspi/Dropbox-Uploader/dropbox_uploader.sh upload '+timestr+ 'yaccel.jpg /'
 os.system(command2)
-command3='/home/mmill/Dropbox-Uploader/dropbox_uploader.sh upload '+timestr+ 'velo.jpg /'
+command3='/home/raspi/Dropbox-Uploader/dropbox_uploader.sh upload '+timestr+ 'velo.jpg /'
 os.system(command3)
-command4='/home/mmill/Dropbox-Uploader/dropbox_uploader.sh upload '+timestr+ 'gyro.jpg /'
+command4='/home/raspi/Dropbox-Uploader/dropbox_uploader.sh upload '+timestr+ 'gyro.jpg /'
 os.system(command4)
-command5='/home/mmill/Dropbox-Uploader/dropbox_uploader.sh upload '+timestr+ 'mpudata.txt /'
+command5='/home/raspi/Dropbox-Uploader/dropbox_uploader.sh upload '+timestr+ 'mpudata.txt /'
 os.system(command5)
-os.remove('/home/mmill/' +timestr+'mpudata.txt')
-os.remove('/home/mmill/'+timestr+'velo.jpg')
-os.remove('/home/mmill/'+timestr+'xaccel.jpg')
-os.remove('/home/mmill/'+timestr+'yaccel.jpg')
-os.remove('/home/mmill/'+timestr+'gyro.jpg')
+os.remove('/home/raspi/' +timestr+'mpudata.txt')
+os.remove('/home/raspi/'+timestr+'velo.jpg')
+os.remove('/home/raspi/'+timestr+'xaccel.jpg')
+os.remove('/home/raspi/'+timestr+'yaccel.jpg')
+os.remove('/home/raspi/'+timestr+'gyro.jpg')
 print("Files Removed")
